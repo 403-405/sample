@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome – Totally Serious Site</title>
+  <meta name="description" content="A very serious welcome page that definitely will not rick roll you." />
+  <link rel="preconnect" href="https://youtu.be/dQw4w9WgXcQ?si=wszO_NIrD54icubb" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Welcome, Brave Internet Traveler</h1>
+    <p class="tagline">You have arrived at the most profoundly important corner of the web.</p>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Prepare For Wisdom (or something like it)</h2>
+      <p>
+        This page contains: 1) inspiration, 2) cutting‑edge web technology,* and 3) absolutely <em>no</em> hidden surprises.
+      </p>
+      <p class="fineprint">* By "cutting‑edge" we mean HTML, CSS, and a dash of JavaScript caffeine.</p>
+      <button id="mysteryBtn" class="btn-warning" aria-describedby="btn-hint">Do NOT click this button</button>
+      <p id="btn-hint" class="hint">Reverse psychology? On the internet? Never.</p>
+    </section>
+
+    <section class="reasons" aria-labelledby="reasons-title">
+      <h2 id="reasons-title">Reasons This Site Exists</h2>
+      <ol>
+        <li>To greet you cordially.</li>
+        <li>To demonstrate impeccable taste in 1980s music.</li>
+        <li>To test whether you heed instructions about mysterious buttons.</li>
+        <li>Because static sites still rock.</li>
+      </ol>
+    </section>
+
+    <section class="video-wrapper visually-hidden" id="rickSection" aria-labelledby="rick-title" aria-hidden="true">
+      <h2 id="rick-title">A Gift Of Eternal Melody</h2>
+      <div class="video-frame" style="text-align:center;">
+        <video id="rick-video" class="embed-responsive-item" width="560" height="315" loop poster="https://picsum.photos/1200/350" controls>
+          <source src="https://cdn.mtdv.me/video/rick.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <button id="closeRick" class="btn-close" aria-label="Close video">× Close</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Definitely Not A Trap Productions. All promises vigorously approximate.</p>
+  </footer>
+
+  <template id="confettiPiece">
+    <div class="confetti"></div>
+  </template>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
